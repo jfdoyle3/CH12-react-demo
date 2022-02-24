@@ -6,6 +6,7 @@ import News from '../News/News';
 import Login from '../Auth/Login';
 import Register from '../Auth/Register';
 import Developers from '../Developers/Developers';
+import Profile from '../Profile/Profile';
 
 const AppRouter = () => {
 
@@ -13,12 +14,14 @@ const AppRouter = () => {
     <div style={{width: '100%'}}>
       <Navbar />
       <div style={{ marginTop: "75px", width: "100%"}}>
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/developers" element={<Developers />} />
+          <Route path="/developers/:devId" element={<Profile />} />
         </Routes>
       </div>
     </div>

@@ -37,13 +37,13 @@ const NavBar = (props) => {
           padding: '0em 1.2em',
           justifyContent: 'flex-end'
         }}>
-          <NavButton to="/" label="home" />
-          <NavButton to="/news" label="news" />
+          <NavButton to="/" label="Home" />
+          <NavButton to="/news" label="News" />
           {auth.token ? (
             <NavButton to="/developers" label="Developers" />
           ) : (
             <Fragment>
-              <NavButton to="/login" label="login" />
+              <NavButton to="/login" label="Login" />
               <NavButton to="/register" label="Sign up" />
             </Fragment>
           ) }
