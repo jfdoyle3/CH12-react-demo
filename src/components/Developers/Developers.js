@@ -31,7 +31,7 @@ const Developers = (props) => {
         setLoading(false);
         setDevelopers(res.data);
       } catch (err) {
-        console.log(err.response.message)
+        console.log(err)
       }
 
 
